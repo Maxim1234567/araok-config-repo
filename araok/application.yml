@@ -26,5 +26,8 @@ management:
     defaults:
       enabled: true
       
+server:
+  port: 0
+      
 app:
   count-content-downloads: 1000
