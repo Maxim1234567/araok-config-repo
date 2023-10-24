@@ -11,8 +11,8 @@ spring:
       routes:
         - id: araok
           uri: lb://araok
-#          predicates:
-#            - Path=/araok/**
+          predicates:
+            - Path=/api/**
 
 management:
   endpoints:
