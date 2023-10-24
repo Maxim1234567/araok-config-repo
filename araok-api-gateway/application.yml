@@ -12,8 +12,7 @@ spring:
         - id: araok
           uri: lb://araok
           predicates:
-            - Path=/api/limit
-            - Method=GET
+            - Path=/araok/**
 
 management:
   endpoints:
