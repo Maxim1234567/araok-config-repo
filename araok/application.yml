@@ -2,8 +2,6 @@ spring:
   data:
     rest:
       base-path: /rest
-  application:
-    name: araok
   datasource:
     url: jdbc:postgresql://localhost:5432/araok
     username: araok
