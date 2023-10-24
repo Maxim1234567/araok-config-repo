@@ -27,3 +27,6 @@ management:
   health:
     defaults:
       enabled: true
+      
+ app:
+   count-content-downloads: 1000
