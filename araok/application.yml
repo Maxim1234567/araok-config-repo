@@ -28,5 +28,5 @@ management:
     defaults:
       enabled: true
       
- app:
-   count-content-downloads: 1000
+app:
+  count-content-downloads: 1000
