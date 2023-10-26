@@ -13,7 +13,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: araok
-          uri: lb://araok
+          uri: lb://localhost:8081
           predicates:
             - Path=/api/**
 
