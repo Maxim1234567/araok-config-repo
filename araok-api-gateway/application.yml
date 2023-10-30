@@ -16,7 +16,7 @@ spring:
         - id: araok-authorization-service
           uri: lb://araok-authorization-service
           predicates:
-            - Path=/api/**
+            - Path=/auth/**
 
 eureka:
   instance:
