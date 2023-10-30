@@ -13,6 +13,7 @@ spring:
           uri: lb://araok
           predicates:
             - Path=/api/**
+            - Path=/rest/**
         - id: araok-authorization-service
           uri: lb://araok-authorization-service
           predicates:
