@@ -14,7 +14,7 @@ spring:
           predicates:
             - Path=/api/**
         - id: araok-authorization-service
-          uri: lb://araok-authorization-servic
+          uri: lb://araok-authorization-service
           predicates:
             - Path=/api/**
 
