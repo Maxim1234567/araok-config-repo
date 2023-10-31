@@ -8,16 +8,6 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      routes:
-        - id: araok
-          uri: lb://araok
-          predicates:
-            - Path=/api/**
-            - Path=/rest/**
-        - id: araok-authorization-service
-          uri: lb://araok-authorization-service
-          predicates:
-            - Path=/auth/**
 
 eureka:
   instance:
@@ -25,6 +15,11 @@ eureka:
   client:
     service-url:
       defaultZone: ${MY_EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8761/eureka}
+
+jwt:
+  secret:
+    access: WtGLdEupIdUAVnTJLxwZ11JfWUzZBqOVpHGA4jGflsp2NmHSF2Zb22XJPugJGcsS4GSGJwZEEkJLn8ARgRTyqw==
+    refresh: 4W/mKXr4XJBqCgfbA9wZnf6BnwOVCYT4Yo+uLEY4LdDpm9AYj0lvuMS7mZ1YMaP1jl3XDdFnsglxQBpht7TkRw==
 
 management:
   endpoints:
