@@ -44,14 +44,14 @@ jwt:
 
 app:
   count-content-downloads: 1000
-#  requests:
-#    - regexp-url: "^(http|https)://(.+):[0-9]+/api/limit$"
-#      method: "GET"
-#    - regexp-url: "^(http|https)://(.+):[0-9]+/api/content$"
-#      method: "GET"
-#    - regexp-url: "^(http|https)://(.+):[0-9]+/api/content/[0-9a-zA-Zà-ÿÀ-ß ]+$"
-#      method: "GET"
-#    - regexp-url: "^(http|https)://(.+):[0-9]+/api/language$"
-#      method: "GET"
-#    - regexp-url: "^(http|https)://(.+):[0-9]+/api/media/[0-9]+/3$"
-#      method: "GET"
+  requests:
+    - regexp-url: "^(http|https)://(.+):[0-9]+/api/limit$"
+      method: "GET"
+    - regexp-url: "^(http|https)://(.+):[0-9]+/api/content$"
+      method: "GET"
+    - regexp-url: "^(http|https)://(.+):[0-9]+/api/content/[0-9a-zA-Zà-ÿÀ-ß ]+$"
+      method: "GET"
+    - regexp-url: "^(http|https)://(.+):[0-9]+/api/language$"
+      method: "GET"
+    - regexp-url: "^(http|https)://(.+):[0-9]+/api/media/[0-9]+/3$"
+      method: "GET"
