@@ -36,7 +36,12 @@ eureka:
 
 server:
   port: 0
-      
+
+jwt:
+  secret:
+    access: WtGLdEupIdUAVnTJLxwZ11JfWUzZBqOVpHGA4jGflsp2NmHSF2Zb22XJPugJGcsS4GSGJwZEEkJLn8ARgRTyqw==
+    refresh: 4W/mKXr4XJBqCgfbA9wZnf6BnwOVCYT4Yo+uLEY4LdDpm9AYj0lvuMS7mZ1YMaP1jl3XDdFnsglxQBpht7TkRw==
+
 app:
   count-content-downloads: 1000
   requests:
@@ -50,8 +55,3 @@ app:
       method: "GET"
     - regexp-url: "^(http|https)://(.+):[0-9]+/api/media/[0-9]+/3$"
       method: "GET"
-
-jwt:
-  secret:
-    access: WtGLdEupIdUAVnTJLxwZ11JfWUzZBqOVpHGA4jGflsp2NmHSF2Zb22XJPugJGcsS4GSGJwZEEkJLn8ARgRTyqw==
-    refresh: 4W/mKXr4XJBqCgfbA9wZnf6BnwOVCYT4Yo+uLEY4LdDpm9AYj0lvuMS7mZ1YMaP1jl3XDdFnsglxQBpht7TkRw==
