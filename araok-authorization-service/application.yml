@@ -1,8 +1,4 @@
 spring:
-  zipkin:
-    sender:
-      type: web
-    base-url: ${MY_SPRING_ZIPKIN_BASE_URL:http://localhost:9411}
   datasource:
     url: ${MY_SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/araok}
     username: araok
@@ -10,6 +6,9 @@ spring:
     driver-class-name: org.postgresql.Driver
 
 management:
+  zipkin:
+    tracing:
+      endpoint: ${MY_MANAGEMENT_ZIPKIN_TRACING_ENDPOINT:http://localhost:9411/api/v2/spans}
   tracing:
     enabled: true
     sampling:
