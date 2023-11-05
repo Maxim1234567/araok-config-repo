@@ -1,4 +1,8 @@
 spring:
+  zipkin:
+    sender:
+      type: web
+    base-url: ${MY_SPRING_ZIPKIN_BASE_URL:http://localhost:9411}
   data:
     rest:
       base-path: /rest
@@ -15,6 +19,10 @@ spring:
     password: araok
 
 management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
   endpoints:
     web:
       exposure:
@@ -25,6 +33,13 @@ management:
   health:
     defaults:
       enabled: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+  pattern:
+    level: "%5p [${spring.application.name},%X{traceId:-},%X{spanId:-}]"
 
 eureka:
   instance:
