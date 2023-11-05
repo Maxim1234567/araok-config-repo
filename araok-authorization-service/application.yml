@@ -6,6 +6,9 @@ spring:
     driver-class-name: org.postgresql.Driver
 
 management:
+  tracing:
+    sampling:
+      probability: 1.0
   endpoints:
     web:
       exposure:
@@ -16,6 +19,10 @@ management:
   health:
     defaults:
       enabled: true
+
+logging:
+  pattern:
+    level: %5p [${spring.application.name},%X{traceId:-},%X{spanId:-}]
 
 eureka:
   instance:
