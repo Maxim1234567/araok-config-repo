@@ -8,8 +8,7 @@ management:
         include: "*"
 
 turbine:
-  aggregator:
-    cluster-name-expression: new String("default")
+  cluster-name-expression: new String("default")
   app-config: araok-authorization-service
 
 eureka:
