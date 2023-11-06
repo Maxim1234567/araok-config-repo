@@ -7,9 +7,9 @@ management:
       exposure:
         include: "*"
 
-hystrix:
-  dashboard:
-    proxy-stream-allow-list: "localhost"
+#hystrix:
+#  dashboard:
+#    proxy-stream-allow-list: "localhost"
 
 turbine:
   cluster-name-expression: new String("default")
