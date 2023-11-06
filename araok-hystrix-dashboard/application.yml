@@ -1,0 +1,21 @@
+server:
+  port: 8788
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+turbine:
+  cluster-name-expression: new String("default")
+  app-config:
+    - araok-authorization-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: ${MY_EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8761/eureka}
