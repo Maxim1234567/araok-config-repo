@@ -11,6 +11,10 @@ turbine:
   cluster-name-expression: new String("default")
   app-config: araok-authorization-service
 
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+
 eureka:
   instance:
     prefer-ip-address: true
