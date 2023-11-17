@@ -66,5 +66,5 @@ app:
       method: "GET"
     - regexp-url: ^(http|https)://(.+):[0-9]+/api/media/[0-9]+/(1|3)$
       method: "GET"
-    - regexp-url: ^(http|https)://(.+):[0-9]+/api/content/id/[0-9]+$
+    - regexp-url: ^(http|https)://(.+):[0-9]+/api/subtitle/[0-9]+/[0-9]+$
       method: "GET"
