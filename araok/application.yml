@@ -60,6 +60,8 @@ app:
       method: "GET"
     - regexp-url: ^(http|https)://(.+):[0-9]+/api/content$
       method: "GET"
+    - regexp-url: ^(http|https)://(.+):[0-9]+/api/content$
+      method: "POST"
     - regexp-url: ^(http|https)://(.+):[0-9]+/api/content/[0-9a-zA-Z ]+$
       method: "GET"
     - regexp-url: ^(http|https)://(.+):[0-9]+/api/language$
