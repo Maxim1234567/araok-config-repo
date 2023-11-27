@@ -64,3 +64,4 @@ app:
       method: "GET"
     - regexp-url: ^(http|https)://(.+):[0-9]+/api/language$
       method: "GET"
+    - regexp-url: ^(http|https)://(.+):[0-9]+/api/media/[0-9]+/3$
